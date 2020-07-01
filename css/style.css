@@ -439,13 +439,14 @@
   position: relative;
   box-sizing: border-box;
   margin: 0 auto;
-  width: 320px;
-  overflow: hidden; }
+  width: 320px; }
 
 .price__table {
   position: absolute;
   margin-bottom: 24px;
-  height: 280px; }
+  height: 280px;
+  width: 320px;
+  overflow: hidden; }
 
 .price__table--show-1 {
   top: 0;
