@@ -56,6 +56,11 @@
   display: none; }
 
 @media (min-width: 768px) {
+  .page-header__container {
+    margin: 0 auto;
+    width: 660px; }
+  .page-header__up-menu {
+    width: 660px; }
   .page-header__logo-image--tablet {
     display: inline; }
   .page-header__logo-image--mobile,
@@ -334,13 +339,15 @@
   font: inherit;
   color: inherit;
   background-color: transparent;
-  margin: 0 12px;
+  margin: 0 10px;
+  width: 6px;
+  height: 6px;
   cursor: pointer; }
   .toggle__button::before {
     content: "";
     position: absolute;
-    top: -3px;
-    left: -3px;
+    top: 0px;
+    left: 0px;
     width: 6px;
     height: 6px;
     border-radius: 50%;
@@ -362,8 +369,8 @@
 .toggle__button--current::after {
   content: "";
   position: absolute;
-  top: -6px;
-  left: -6px;
+  top: -3px;
+  left: -3px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -391,9 +398,8 @@
 .rewiews__container {
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 13px 20px 0px 20px;
-  width: 320px;
-  min-height: 353px; }
+  padding: 13px 20px 68px 20px;
+  width: 320px; }
 
 .rewiews__list {
   margin: 0;
@@ -403,9 +409,8 @@
 .rewiews__item {
   display: none;
   margin: 0;
-  margin-bottom: 18px;
-  padding: 0;
-  min-height: 100px; }
+  margin-bottom: 22px;
+  padding: 0; }
   .rewiews__item blockquote {
     margin: 0;
     padding: 0;
@@ -461,8 +466,8 @@
   overflow: hidden; }
 
 .price__table {
-  position: absolute;
-  margin-bottom: 24px;
+  position: relative;
+  margin-bottom: 26px;
   height: 280px;
   width: 320px;
   overflow: hidden; }
@@ -482,11 +487,13 @@
   left: -536px;
   transition: all 0.3s ease-in; }
 
-.table__toggle {
-  position: absolute;
-  top: 306px;
-  left: 124px;
-  width: 320px; }
+.price__toggle--wrapper {
+  display: flex;
+  width: 100%; }
+
+.price__toggle {
+  justify-content: center;
+  width: 100%; }
 
 .table-tariffs {
   border-collapse: collapse;
@@ -623,6 +630,12 @@
 
 .contacts__map {
   position: relative; }
+  .contacts__map picture {
+    position: absolute;
+    z-index: 2; }
+  .contacts__map iframe {
+    position: absolute;
+    z-index: 4; }
   .contacts__map img {
     display: block;
     width: 100%;
@@ -634,6 +647,7 @@
   .contacts__map::after {
     content: "";
     position: absolute;
+    z-index: 10;
     top: 0;
     left: 0;
     width: 100%;
@@ -645,6 +659,7 @@
   .contacts__map::before {
     content: "";
     position: absolute;
+    z-index: 3;
     top: 95px;
     left: 143px;
     width: 16px;
