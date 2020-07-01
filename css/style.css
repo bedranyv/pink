@@ -25,12 +25,17 @@
   background-color: #283645; }
 
 .page-header__container {
-  box-sizing: border-box;
-  position: relative;
   margin: 0 auto;
+  width: 320px; }
+
+.page-header__up-menu {
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 101;
+  top: 0;
   padding: 22px 0px 0 0px;
-  width: 320px;
   height: 66px;
+  width: 320px;
   background-color: rgba(28, 37, 48, 0.5); }
 
 .page-index .page-header__logo[href] {
@@ -439,7 +444,9 @@
   position: relative;
   box-sizing: border-box;
   margin: 0 auto;
-  width: 320px; }
+  width: 320px;
+  height: 350px;
+  overflow: hidden; }
 
 .price__table {
   position: absolute;
