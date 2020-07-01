@@ -155,8 +155,8 @@
 			<section class="motivation-title">
 				<div class="motivation-title__container">
 					<h2 class="visually-hidden">Наш слоган</h2>
-					<p class="motivation-title__text">Устали от серости мегаполиса?</p>
-					<p class="motivation-title__text">Нам есть, что вам предложить!</p>
+					<p class="motivation-title__text">Устали от серости <br>мегаполиса?</p>
+					<p class="motivation-title__text">Нам есть, что вам <br>предложить!</p>
 				</div>
 			</section>
 			<section class="about-app">
@@ -164,34 +164,34 @@
 					<h2 class="visually-hidden">Описание нашего приложения</h2>
 					<ul class="about-app__list">
 						<li class="about-app__item">
-							<picture class="about-app__picture about-app__picture--mood">
+							<h3 class="about-app__title">Поднимает настроение</h3>
+							<p class="about-app__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+						</li>
+						<picture class="about-app__picture about-app__picture--mood">
 								<source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
 								<source type="image/webp" media="(min-width: 320px)" srcset="img/iphone-screen-1-tablet@1x.webp 1x, img/iphone-screen-1-tablet@2x.webp 2x">
 								<source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
 								<img src="img/iphone-screen-1-tablet@1x.png" srcset="img/iphone-screen-1-tablet@2x.png 2x" alt="Скриншот приложения с розовым фильтром">
 							</picture>
-							<h3 class="about-app__title">Поднимает настроение</h3>
-							<p class="about-app__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-						</li>
 						<li class="about-app__item">
+							<h3 class="about-app__title">Меняет мир вокруг</h3>
+							<p class="about-app__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект!</p>
 							<picture class="about-app__picture about-app__picture--world">
 								<source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
 								<source type="image/webp" media="(min-width: 320px)" srcset="img/iphone-screen-2-tablet@1x.webp 1x, img/iphone-screen-2-tablet@2x.webp 2x">
 								<source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
 								<img src="img/iphone-screen-2-tablet@1x.png" srcset="img/iphone-screen-2-tablet@2x.png 2x" alt="Скриншот приложения с розовым фильтром">
 							</picture>
-							<h3 class="about-app__title">Меняет мир вокруг</h3>
-							<p class="about-app__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект!</p>
 						</li>
 						<li class="about-app__item">
+							<h3 class="about-app__title">Заводит новых друзей</h3>
+							<p class="about-app__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
 							<picture class="about-app__picture about-app__picture--friends">
 								<source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
 								<source type="image/webp" media="(min-width: 320px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
 								<source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
 								<img src="img/iphone-screen-3-tablet@1x.png" srcset="img/iphone-screen-3-tablet@2x.png 2x" width="292" height="302"alt="Скриншот приложения с розовым фильтром">
 							</picture>
-							<h3 class="about-app__title">Заводит новых друзей</h3>
-							<p class="about-app__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
 						</li>
 					</ul>
 				</div>
@@ -226,17 +226,19 @@
 					</ul>
 					<button class="rewiews__button rewiews__button--back" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
 					<button class="rewiews__button rewiews__button--next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
-					<ul class="rewiews__toggle toggle">
-						<li>
-							<button class="toggle__button rewiews__toggle--1 toggle__button--current" type="button"><span class="visually-hidden">1</span></button>
-						</li>
-						<li>
-							<button class="toggle__button rewiews__toggle--2" type="button"><span class="visually-hidden">2</span></button>
-						</li>
-						<li>
-							<button class="toggle__button rewiews__toggle--3" type="button"><span class="visually-hidden">3</span></button>
-						</li>
-					</ul>
+					<div class="rewiews__toggle--wrapper">
+						<ul class="rewiews__toggle toggle">
+							<li>
+								<button class="toggle__button rewiews__toggle--1 toggle__button--current" type="button"><span class="visually-hidden">1</span></button>
+							</li>
+							<li>
+								<button class="toggle__button rewiews__toggle--2" type="button"><span class="visually-hidden">2</span></button>
+							</li>
+							<li>
+								<button class="toggle__button rewiews__toggle--3" type="button"><span class="visually-hidden">3</span></button>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</section>
 			<section class="price">

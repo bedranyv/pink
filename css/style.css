@@ -127,7 +127,7 @@
   margin: 0;
   padding: 0;
   padding-top: 15px;
-  height: 64px;
+  min-height: 64px;
   text-align: center;
   background-color: #283645;
   border-top: 1px solid #4c5764;
@@ -192,7 +192,7 @@
   margin: 0 auto;
   margin-top: -66px;
   width: 320px;
-  height: 733px;
+  min-height: 733px;
   background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
   background-size: 258px 286px, 320px 462px;
   background-position: left 175px, center top;
@@ -275,40 +275,48 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding: 16px 30px 278px 30px;
+  padding: 24px 30px 0px 30px;
   list-style: none; }
 
 .about-app__item {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  margin-bottom: 39px; }
-
-.about-app__picture--mood,
-.about-app__picture--world {
-  display: none; }
-
-.about-app__picture--friends {
-  position: absolute;
-  top: 140px;
-  left: 53px; }
-  .about-app__picture--friends img {
-    width: 157px;
-    height: 277px; }
+  margin-bottom: 29px; }
 
 .about-app__title {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 10px;
+  line-height: 28px;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-align: center; }
 
 .about-app__description {
+  margin: 0;
+  padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   letter-spacing: 0.04em;
   text-align: center; }
+
+.about-app__picture--mood,
+.about-app__picture--world {
+  display: none; }
+
+.about-app__picture--friends {
+  margin-top: 41px;
+  width: 100%;
+  text-align: center; }
+  .about-app__picture--friends img {
+    vertical-align: top;
+    width: 157px;
+    height: 277px; }
 
 .effect {
   display: none; }
@@ -385,19 +393,18 @@
   margin: 0 auto;
   padding: 13px 20px 0px 20px;
   width: 320px;
-  height: 353px; }
+  min-height: 353px; }
 
 .rewiews__list {
   margin: 0;
   padding: 0;
-  padding-top: 30px;
   list-style: none; }
 
 .rewiews__item {
   display: none;
   margin: 0;
   padding: 0;
-  height: 250px; }
+  height: 242px; }
   .rewiews__item blockquote {
     margin: 0;
     padding: 0;
@@ -428,14 +435,18 @@
 .rewiews__button {
   display: none; }
 
+.rewiews__toggle--wrapper {
+  display: flex;
+  width: 100%; }
+
 .rewiews__toggle {
-  margin: -8px 0 0 103px;
-  padding: 0; }
+  justify-content: center;
+  width: 100%; }
 
 .price {
   margin: 0;
   padding: 0;
-  padding-top: 56px;
+  padding-top: 26px;
   padding-bottom: 30px;
   height: 350px;
   background-color: #f2f2f2; }
