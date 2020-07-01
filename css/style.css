@@ -256,7 +256,7 @@
     top: -50px;
     width: 100%;
     height: 50px;
-    background-image: linear-gradient(to left top, #f2f2f2 50%, transparent 51%);
+    background-image: linear-gradient(to left top, #f2f2f2 50%, transparent 50.1%);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: right; }
@@ -432,26 +432,39 @@
   padding: 0;
   padding-top: 56px;
   padding-bottom: 30px;
+  height: 350px;
   background-color: #f2f2f2; }
 
+.price__container {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 320px; }
+
 .price__table {
-  margin-bottom: 24px; }
+  position: absolute;
+  margin-bottom: 24px;
+  height: 280px; }
 
 .price__table--show-1 {
-  margin: 0 130px;
+  top: 0;
+  left: 20px;
   transition: all 0.3s ease-in; }
 
 .price__table--show-2 {
-  margin: 0 -148px;
+  top: 0;
+  left: -258px;
   transition: all 0.3s ease-in; }
 
 .price__table--show-3 {
-  margin: 0 -426px;
+  top: 0;
+  left: -536px;
   transition: all 0.3s ease-in; }
 
 .table__toggle {
-  margin: 0 auto;
-  padding-left: 233px;
+  position: absolute;
+  top: 306px;
+  left: 124px;
   width: 320px; }
 
 .table-tariffs {
@@ -550,11 +563,10 @@
 .contacts__container {
   box-sizing: border-box;
   margin: 0 auto;
-  padding-top: 13px;
   width: 320px; }
 
 .contacts__main-title {
-  padding-top: 24px;
+  padding-top: 21px;
   margin-bottom: 35px;
   font-family: "OpenSans Light", "Arial", sans-serif;
   font-size: 24px;
