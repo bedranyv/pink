@@ -725,8 +725,7 @@
   display: none;
   margin: 0;
   margin-bottom: 22px;
-  padding: 0;
-  height: 224px; }
+  padding: 0; }
   .rewiews__item blockquote {
     margin: 0;
     padding: 0;
@@ -770,7 +769,7 @@
     padding: 22px 20px 30px 20px;
     width: 660px; }
   .rewiews__item {
-    margin-bottom: 0px; }
+    margin-bottom: 24px; }
   .rewiews__item blockquote {
     display: flex;
     flex-direction: column; }
@@ -805,7 +804,7 @@
     background-position: right; }
   .rewiews__container {
     position: relative;
-    padding: 170px 250px 70px 250px;
+    padding: 170px 250px 93px 250px;
     width: 1200px;
     background-image: url(../img/icon-quotes.svg);
     background-size: 79px 63px;
