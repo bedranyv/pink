@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<title>Photo | Pink</title>
+		<title>Конкурс | Pink</title>
 		<link href="css/normalize.css" type="text/css" rel="stylesheet">
 		<link href="css/style.css" type="text/css" rel="stylesheet">
 	</head>
@@ -103,22 +103,6 @@
 					v10.02L13.472,31.85L1.925,24.979V15.127z"/>
 				</g>
 		  </symbol>
-		  <symbol id="icon-editor-crop" viewBox="0 0 48 48">
-		  	<g>
-		  		<path d="M34 30h4V14c0-2.21-1.79-4-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4H14z"/>
-				</g>
-			</symbol>
-			<symbol id="icon-editor-fill" viewBox="0 0 48 48">
-		  	<g>
-		  		<path d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 000 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11a3 3 0 000-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7zM0 40h48v3H0z"/>
-				</g>
-			</symbol>
-			<symbol id="icon-editor-contrast" viewBox="-35.422 -7.96 31.92 31.92">
-		  	<g>
-		  		 <path d="M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z"/>
-		  		 <path d="M-19.462 16.331a8.519 8.519 0 008.52-8.52 8.518 8.518 0 00-8.52-8.519"/>
-				</g>
-			</symbol>
 		</svg>
 		<header class="page-header">
 			<div class="page-header__container">
@@ -134,11 +118,11 @@
 							<li class="main-nav__item">
 								<a href="index.html">Главная</a>
 							</li>
-							<li class="main-nav__item main-nav__item--current">
-								<a>Фотографии</a>
-							</li>
 							<li class="main-nav__item">
-								<a href="form.html">Конкурс</a>
+								<a href="photo.html">Фотографии</a>
+							</li>
+							<li class="main-nav__item main-nav__item--current">
+								<a>Конкурс</a>
 							</li>
 							<li class="main-nav__item">
 								<a href="#">HTML Academy</a>
@@ -151,180 +135,117 @@
 		<main class="page-other">
 			<section class="page-other__header">
 				<div class="page-other__header--container">
-					<h1 class="page-other__header--title">Фотографии<br> пользователей</h1>
+					<h1 class="page-other__header--title">Конкурс на самое безбашенное путешествие с Пинк</h1>
 				</div>
 			</section>
-			<section class="photo-users">
-				<h2 class="visually-hidden">Фото пользователей</h2>
-				<div class="photo-users__container">
-					<p class="photo-users__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-					<div class="photo-users__photo-wrapper--day-photo">
-						<picture class="photo-users__picture photo-users__picture--day-photo">
-							<source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
-							<source type="image/webp" media="(min-width: 768px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
-							<source type="image/webp" media="(min-width: 320px)" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
-							<source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-							<source media="(min-width: 768px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-							<img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото пользователя, панорама дня">
-						</picture>
-						<div class="photo-users__comments">
-							<div class="photo-users__comments--wrapper">
-								<p class="photo-users__comments--author">Анна <span>(5 минут назад)</span></p>
-								<p class="photo-users__comments--text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-							</div>
-							<p class="photo-users__comments--likes">Нравится: 215</p>
-						</div>
+			<section class="form-page">
+				<h2 class="visually-hidden">Форма для участия в конкурсе</h2>
+				<div class="form-page__container">
+					<p class="form-page__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span> Пожалуйста, заполните форму ниже:</span></p>
+				</div>
+				<div class="form-page__area--1 form-page__area--name">
+					<div class="form-page__container">
+						<form class="form" action="https://echo.htmlacademy.ru" method="post">
+							<fieldset class="form__fieldset form__fieldset--name">
+								<p>
+									<label class="form__label" for="participant-surname">Фамилия:</label>
+									<input class="form__input" id="participant-surname" type="text" name="surname" placeholder="Укажите фамилию *" required>
+								</p>
+								<p>
+									<label class="form__label" for="participant-name">Имя:</label>
+									<input class="form__input" id="participant-name" type="text" name="name" placeholder="Введите ваше имя *" required>
+								</p>
+								<p>
+									<label class="form__label" for="participant-patronymic">Отчество:</label>
+									<input class="form__input" id="participant-patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+								</p>
+							</fieldset>
 					</div>
-					<div class="photo-users__photo--container">
-						<div class="photo-users__photo-wrapper">
-							<picture class="photo-users__picture">
-								<source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
-								<source type="image/webp" media="(min-width: 768px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
-								<source type="image/webp" media="(min-width: 320px)" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
-								<source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
-								<source media="(min-width: 768px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-								<img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото пользователя машина">
-							</picture>
-							<div class="photo-users__comments">
-								<div class="photo-users__comments--wrapper">
-									<p class="photo-users__comments--author">Левон <span>(5 часов назад)</span></p>
-									<p class="photo-users__comments--text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-								</div>
-								<p class="photo-users__comments--likes">Нравится: 356</p>
+				</div>
+				<div class="form-page__area--2 form-page__area--checkbox">
+					<div class="form-page__container">
+						<fieldset class="form__fieldset form__fieldset--checkbox">
+							<legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+							<ul class="form__checkbox--list">
+								<li class="form__checkbox--item">
+									<input class="form__checkbox--input visually-hidden" id="checkbox--1" type="checkbox" name="shark selfie" checked>
+									<label class="form__checkbox--label" for="checkbox--1">Сделал селфи с акулой</label>
+								</li>
+								<li class="form__checkbox--item">
+									<input class="form__checkbox--input visually-hidden" id="checkbox--2" type="checkbox" name="sunburned on the beach" checked>
+									<label class="form__checkbox--label" for="checkbox--2">Обгорел на пляже</label>
+								</li>
+								<li class="form__checkbox--item">
+									<input class="form__checkbox--input visually-hidden" id="checkbox--3" type="checkbox" name="Chuck Norris">
+									<label class="form__checkbox--label" for="checkbox--3">Видел Чака Норриса</label>
+								</li>
+								<li class="form__checkbox--item">
+									<input class="form__checkbox--input visually-hidden" id="checkbox--4" type="checkbox" name="souvenirs">
+									<label class="form__checkbox--label" for="checkbox--4">Накупил сувениров</label>
+								</li>
+								<li class="form__checkbox--item">
+									<input class="form__checkbox--input visually-hidden" id="checkbox--5" type="checkbox" name="tower" checked>
+									<label class="form__checkbox--label" for="checkbox--5">Удержал башню</label>
+								</li>
+								<li class="form__checkbox--item">
+									<input class="form__checkbox--input visually-hidden" id="checkbox--6" type="checkbox" name="degeated the hotel">
+									<label class="form__checkbox--label" for="checkbox--6">Разгромил отель</label>
+								</li>
+							</ul>
+						</fieldset>
+					</div>
+				</div>
+				<div class="form-page__area--1 form-page__area--contacts">
+					<div class="form-page__container">
+						<fieldset class="form__fieldset form__fieldset--contacts">
+							<legend class="form__legend">Контактная информация</legend>
+							<div class="form__contacts--wrapper">
+								<p class="form__input-label-wrapper form__input-label-wrapper--tel">
+									<label class="form__label" for="participant-tel">Номер телефона</label>
+									<input class="form__input" id="participant-tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
+								</p>
+								<p class="form__input-label-wrapper form__input-label-wrapper--email">
+									<label class="form__label" for="participant-email">Адрес почты</label>
+									<input class="form__input" id="participant-email" type="email" name="email" placeholder="Введите почту *" required>
+								</p>
 							</div>
-						</div>
-						<div class="photo-users__photo-wrapper">
-							<picture class="photo-users__picture">
-								<source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
-								<source type="image/webp" media="(min-width: 768px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
-								<source type="image/webp" media="(min-width: 320px)" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
-								<source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-								<source media="(min-width: 768px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-								<img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото пользователя барабаны">
-							</picture>
-							<div class="photo-users__comments">
-								<div class="photo-users__comments--wrapper">
-									<p class="photo-users__comments--author">Антон <span>(12 часов назад)</span></p>
-									<p class="photo-users__comments--text">Соседи будут рады!</p>
-								</div>
-								<p class="photo-users__comments--likes">Нравится: 666</p>
-							</div>
-						</div>
-						<div class="photo-users__photo-wrapper">
-							<picture class="photo-users__picture">
-								<source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
-								<source type="image/webp" media="(min-width: 768px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
-								<source type="image/webp" media="(min-width: 320px)" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
-								<source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-								<source media="(min-width: 768px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-								<img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото пользователя окна">
-							</picture>
-							<div class="photo-users__comments">
-								<div class="photo-users__comments--wrapper">
-									<p class="photo-users__comments--author">Борис <span>(20 часов назад)</span></p>
-									<p class="photo-users__comments--text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-								</div>
-								<p class="photo-users__comments--likes">Нравится: 215</p>
-							</div>
-						</div>
-						<div class="photo-users__photo-wrapper">
-							<picture class="photo-users__picture">
-								<source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
-								<source type="image/webp" media="(min-width: 768px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
-								<source type="image/webp" media="(min-width: 320px)" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
-								<source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-								<source media="(min-width: 768px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-								<img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото пользователя кубанская бахча">
-							</picture>
-							<div class="photo-users__comments">
-								<div class="photo-users__comments--wrapper">
-									<p class="photo-users__comments--author">Сергей <span>(25 часов назад)</span></p>
-									<p class="photo-users__comments--text">Самая кубанская в мире!</p>
-								</div>
-								<p class="photo-users__comments--likes">Нравится: 4</p>
-							</div>
-						</div>
-						<div class="photo-users__photo-wrapper">
-							<picture class="photo-users__picture">
-								<source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
-								<source type="image/webp" media="(min-width: 768px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
-								<source type="image/webp" media="(min-width: 320px)" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
-								<source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-								<source media="(min-width: 768px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-								<img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото пользователя ноги на фоне гор">
-							</picture>
-							<div class="photo-users__comments">
-								<div class="photo-users__comments--wrapper">
-									<p class="photo-users__comments--author">Максим <span>(40 часов назад)</span></p>
-									<p class="photo-users__comments--text">Где снег-то?</p>
-								</div>
-								<p class="photo-users__comments--likes">Нравится: 150</p>
-							</div>
-						</div>
-						<div class="photo-users__photo-wrapper">
-							<picture class="photo-users__picture">
-								<source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
-								<source type="image/webp" media="(min-width: 768px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
-								<source type="image/webp" media="(min-width: 320px)" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
-								<source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-								<source media="(min-width: 768px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-								<img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото пользователя крыло самолета">
-							</picture>
-							<div class="photo-users__comments">
-								<div class="photo-users__comments--wrapper">
-									<p class="photo-users__comments--author">Надежда <span>(45 часов назад)</span></p>
-									<p class="photo-users__comments--text">Всем GM и взаимные лайки!</p>
-								</div>
-								<p class="photo-users__comments--likes">Нравится: 2560</p>
-							</div>
+						</fieldset>
+					</div>
+				</div>
+				<div class="form-page__area--2 form-page__area--radio">
+					<div class="form-page__container">
+						<fieldset class="form__fieldset form__fieldset--radio">
+							<legend class="form__legend">С каким приложением путешествовали?</legend>
+							<ul class="form__radio--list">
+								<li class="form__radio--item">
+									<input class="form__radio--input visually-hidden" id="radio--1" type="radio" name="app" value="pink ios" checked>
+									<label class="form__radio--label" for="radio--1">Pink для iOS</label>
+								</li>
+								<li class="form__radio--item">
+									<input class="form__radio--input visually-hidden" id="radio--2" type="radio" name="app" value="pink android">
+									<label class="form__radio--label" for="radio--2">Pink на Android</label>
+								</li>
+								<li class="form__radio--item">
+									<input class="form__radio--input visually-hidden" id="radio--3" type="radio" name="app" value="pink windows phone">
+									<label class="form__radio--label" for="radio--3">Windows Phone</label>
+								</li>
+							</ul>
+						</fieldset>
+					</div>
+				</div>
+				<div class="form-page__area--1 form-page__area--textarea">
+					<div class="form-page__container">
+						<fieldset class="form__fieldset form__fieldset--textarea">
+							<legend class="form__legend">Опишите свои эмоции</legend>
+							<textarea class="form__textarea" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+						</fieldset>
+						<div class="form__button--wrapper">
+							<button type="submit" class="button button--green form__button">Отправить форму</button>
+							<p class="form__note">* —  Обязательные <span>для заполнения </span>поля</p>
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="photo-post">
-				<h2 class="visually-hidden">Фото пользователей</h2>
-				<div class="photo-post__container">
-					<p class="photo-post__title">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
-					<div class="photo-post__area">
-						<picture class="photo-post__picture">
-							<source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
-							<source type="image/webp" media="(min-width: 768px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
-							<source type="image/webp" media="(min-width: 320px)" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
-							<source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
-							<source media="(min-width: 768px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-							<img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото пользователя барабаны">
-						</picture>
-						<div class="photo-post__editor--column">
-							<div class="photo-post__editor">
-								<div class="photo-post__editor--wrapper">
-									<div class="photo-post__button-input--wrapper">
-										<button class="photo-post__filter--button photo-post__filter--button-current" type="button">
-											<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-crop"></use></svg>
-										</button>
-										<input class="photo-post__filter--range" type="range" min="0" max="100" step="1" value="80">
-									</div>
-									<div class="photo-post__button-input--wrapper">
-										<button class="photo-post__filter--button" type="button">
-											<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-fill"></use></svg>
-										</button>
-										<input class="photo-post__filter--range" type="range" min="0" max="100" step="1" value="15">
-									</div>
-									<div class="photo-post__button-input--wrapper">
-										<button class="photo-post__filter--button" type="button">
-											<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-contrast"></use></svg>
-										</button>
-										<input class="photo-post__filter--range" type="range" min="0" max="100" step="1" value="55">
-									</div>
-								</div>
-								<input class="photo-post__filter--range photo-post__filter--range-mobile" type="range" min="0" max="100" step="1" value="84">
-							</div>
-							<div class="photo-post__editor--button-wrapper">
-								<button class="photo-post__editor--button button button--red" type="button">Запостить</button>
-								<button class="photo-post__editor--button button button--gray" type="button">Отмена</button>
-							</div>
-						</div>
-					</div>
-				</div>
+				</form>
 			</section>
 		</main>
 		<footer class="page-footer">
