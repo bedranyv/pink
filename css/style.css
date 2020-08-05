@@ -857,7 +857,8 @@
     height: 46px;
     border: none;
     background-color: transparent;
-    cursor: pointer; }
+    cursor: pointer;
+    opacity: 0.3; }
     .rewiews__button svg {
       width: 22px;
       height: 42px; }
@@ -867,6 +868,10 @@
     .rewiews__button--next {
       top: 210px;
       right: 129px; }
+    .rewiews__button:hover, .rewiews__button:focus {
+      opacity: 1; }
+    .rewiews__button:active {
+      opacity: 0.1; }
   .rewiews__text {
     margin-bottom: 36px; }
   .rewiews__author {
@@ -1650,6 +1655,8 @@
     width: 48px;
     height: 48px;
     opacity: 0.3; }
+  .photo-post__filter--button:hover svg, .photo-post__filter--button:focus svg {
+    opacity: 0.5; }
 
 .photo-post__button-input--wrapper:nth-child(3) .photo-post__filter--button {
   box-sizing: border-box;
@@ -1664,6 +1671,9 @@
 .photo-post__filter--button-current svg {
   opacity: 1;
   fill: #d22856; }
+
+.photo-post__filter--button-current:hover svg, .photo-post__filter--button-current:focus svg {
+  opacity: 1; }
 
 .photo-post__filter--range {
   display: none;
@@ -1695,6 +1705,8 @@
   cursor: pointer;
   border: 2px solid #d22856;
   border-radius: 50%; }
+  .photo-post__filter--range::-webkit-slider-thumb:active {
+    background: #d22856; }
 
 .photo-post__editor--button-wrapper {
   margin: 0 auto;
@@ -1761,6 +1773,8 @@
     .photo-post__filter--button svg {
       fill: #d22856;
       opacity: 1; }
+    .photo-post__filter--button:hover svg, .photo-post__filter--button:focus svg {
+      opacity: 1; }
   .photo-post__button-input--wrapper:nth-child(1) .photo-post__filter--button {
     margin-left: 9px;
     width: 22px;
@@ -1778,7 +1792,7 @@
       height: 22px; }
   .photo-post__button-input--wrapper:nth-child(3) .photo-post__filter--button {
     margin-top: -3px;
-    margin-left: 14px;
+    margin-left: 13px;
     width: 16px;
     height: 16px; }
     .photo-post__button-input--wrapper:nth-child(3) .photo-post__filter--button svg {
@@ -1840,6 +1854,7 @@
       width: 52px;
       height: 48px; }
   .photo-post__button-input--wrapper:nth-child(3) .photo-post__filter--button {
+    margin-left: 17px;
     width: 32px;
     height: 32px; }
     .photo-post__button-input--wrapper:nth-child(3) .photo-post__filter--button svg {
